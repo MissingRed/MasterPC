@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+      <link rel="stylesheet" href="../Estilos/estilos1.css">
+      <link rel="stylesheet" href="../Estilos/swiper.min.css">
+
+      <!-- Demo styles -->
+      <style>
+        body {
+
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color:#000;
+          margin: 0;
+          padding: 0;
+        }
+        .swiper-container {
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 50px;
+        }
+        .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+
+        }
+      </style>
+  </head>
+
+  <body>
+    <header id="main">
+      <nav>
+        <div class="Logo"><a href="../Vista/Inicio.html"><img src="img/mastp2.png" width="127" height="92"></a></div>
+        <ul>
+          <li><a class ="menu " href="../Vista/Somos.html">Quiénes somos</a></li>
+          <li><a class ="menu " href="../Vista/Graficas.html">tarjetas graficas</a></li>
+          <li><a class ="menu " href="../Vista/Rams.html">Rams</a></li>
+          <li><a class ="menu " href="../Vista/procesadores.html">Procesadores</a></li>
+          <li><a class ="menu " href="../Vista/Gabinetes.html">Gabinetes</a></li>
+          <li><a class ="active " href="../Vista/Registro.html">Registrarse</a></li>
+          <li><a class ="active " href="../index.html">Iniciar sesión</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <section id="imagen">
+        <center><img src="../Vista/img/productos.png"></center>
+  </section>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/RTX.jpg)">
+              <nav class="elemento">
+              <ul>
+                <li><a class ="slider" href="../Vista/Graficas.html">Graficas</a></li>
+              </ul>
+              </nav>
+          </div>
+            <div class="swiper-slide" style="background-image:url(img/ram.jpg)">
+              <nav class="elemento">
+                <ul>
+                  <li><a class ="slider" href="../Vista/Rams.html">RAMS</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/intel.jpg)">
+              <nav class="elemento">
+                <ul>
+                  <li><a class ="slider" href="../Vista/procesadores.html">PROCESADORES</a></li>
+                </ul>
+                </nav>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/rgb.jpg)">
+              <nav class="elemento">
+                <ul>
+                  <li><a class ="slider" href="../Vista/Gabinetes.html">GABINETES</a></li>
+                </ul>
+                </nav>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="../Controlador/js/swiper.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          });
+        </script>
+
+           <section id=content>
+             <img src="../Vista/img/razer2.png">
+              <img src="../Vista/img/mouse.png">
+          </section>
+
+        <div class="footer">
+
+          &nbsp  Created By: @Juan - @Daniel </br> </br> </br> &nbsp Todos lo derechos reservados - 2019 ©
+        </div>
+  </body>
+</html>
